@@ -10,3 +10,7 @@ address = 'first street';
 
 // i love javascript its really awesome language i've ever seen in my life!
 console.log(firstName, last_name, address);
+
+const git = () => {
+  return 'Git and Github are awesome!';
+};
