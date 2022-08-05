@@ -1,20 +1,4 @@
-## Variables #1
-
-1. create "firstName" and "last_name" variables.
-2. assign your values
-3. create "address" variable and assign "main street"
-4. re-assign address to "first street" later
-5. log all values in the console
-
-## Concatenate Strings #2
-
-1. create "stree" and "country" variables
-2. assign your values
-3. create "fullMailingAddress" variable and assign
-   the result of "street + country"
-4. remember about the space
-5. log "fullMailingAddress" in the console
-
+/**
 ## Numbers #3
 
 1. create "score1", "score2", "score3" variables and
@@ -31,3 +15,25 @@
    (your values goes here) plates available' - string
    concatenation.
 9. log message.
+ */
+
+let score1 = 40;
+let score2 = 70;
+let score3 = 25;
+
+let totalScore = score1 + score2 + score3;
+
+let averageScore = totalScore / 3;
+
+console.log('Total Score is ' + totalScore);
+console.log('Average Score is ' + averageScore);
+
+let plates = 20;
+let people = 7;
+
+let remainingPlates = 20 % 7;
+remainingPlates++;
+
+const message = 'There are ' + remainingPlates + ' ' + 'plates available';
+
+console.log(message);
