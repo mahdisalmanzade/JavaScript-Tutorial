@@ -16,7 +16,8 @@ console.log(name - number); // NaN(Not a Number!)
  */
 let number2 = '10';
 let number3 = '6';
-console.log(number2 - number3);
+// string '10' and '6' converted to the number and then subtraction took place
+console.log(number2 - number3); // -13
 
 /*
  Even if one of the variables be number 
@@ -28,10 +29,13 @@ let number5 = '15';
 
 console.log(number4 + number5); // string of 1015
 
-let someRandomValue = Math.ceil(Math.random() * 5);
-document.querySelector('.form').addEventListener('click', function (e) {
+let someRandomValue = 13;
+document.querySelector('.form').addEventListener('submit', function (e) {
   e.preventDefault();
-  let value = document.querySelector('.input').value;
+  // user input is always string and we should convert it into number
+  let value = parseInt(document.querySelector('.input').value);
+  console.log('User input is');
   console.log(value);
-  console.log(someRandomValue + parseInt(value));
+  console.log('Sum of two values');
+  console.log(someRandomValue + value);
 });
