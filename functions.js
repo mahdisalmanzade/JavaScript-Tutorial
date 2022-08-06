@@ -10,6 +10,7 @@ function sum(firstNumber, secondNumber) {
 // Function Invocation
 console.log(sum(2, 5));
 
+// paramters for a function are like placeholders or local variables
 function greed(name, family) {
   // Set default values for arguments
   name == undefined ? (name = 'Mahdi') : name;
@@ -17,4 +18,6 @@ function greed(name, family) {
   console.log(`${name} ${family}`);
 }
 
+// Invocation
 greed('Ali', 'Khodayi');
+
