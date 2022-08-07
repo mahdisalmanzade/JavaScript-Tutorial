@@ -12,14 +12,16 @@
 
 // Object Declaration/Literal
 const car = {
-  make: 'Benz',
-  model: 'Mercedes',
-  color: ['White', 'Black', 'Gray', 'Silver', 'Blue'],
+  make: 'Dodge',
+  model: 'Challenger',
+  year: 1970,
+  color: ['black', 'red'],
+  hybrid: false,
   drive: function () {
-    console.log('Fortunately this car can drive!😂');
+    console.log('Driving..🚘');
   },
   stop() {
-    console.log('Fortunately this car can stop😁 ');
+    console.log('Stopped..🚦');
   },
 };
 

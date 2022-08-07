@@ -1,5 +1,5 @@
 // Data Types - 7 Total Data Types
-// Primitive Types - String, Number, Boolean, Null, Undefined, Symbol
+// Primitive Types - String, Number, Boolean, Null, Undefined, Symbol, BigInt
 // Object Types - Arrays, Objects, Functions
 
 // typeof keyword - operator (typeof variable) (typeof value)
@@ -11,7 +11,7 @@ let age = 26;
 // Boolean
 let hasGymAddiction = true;
 // Null
-let martialStatus = null;
+let martialStatus = 'Single';
 // Undefined
 let noValue;
 // Symbol(ES6)

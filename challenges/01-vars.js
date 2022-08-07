@@ -5,10 +5,8 @@ last_name = 'Salmanizadehgan';
 
 let address;
 
-address = 'Niro Havayi';
+address = 'New York';
 
-address = 'first street';
+address = 'NY first street';
 
 console.log(firstName, last_name, address);
-
-// Second Project ## Concatenate Strings #2
