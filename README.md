@@ -31,3 +31,36 @@
    (your values goes here) plates available' - string
    concatenation.
 9. log message.
+
+/**
+## Arrays #4
+1. create "fruits" array and store some fruit values
+2. setup the last item as number(random)
+3. assign first fruit to the variable
+4. re-assign last array item to the actual fruit
+5. log both first fruit variable and entire fruits array
+
+*/
+/**
+## Functions #5
+1. Create "calculateTotal" function.
+2. Add two parameters subTotal, Tax.
+3. Return sum of parameters.
+4. Create 3 vars "order1", "order2", "order3".
+5. Call calculateTotal, pass in some values and 
+   assign result to each variable(order1 etc)
+6. Log all three variables
+7. Refactor "calculateTotal" to function expression.
+ */
+ 
+ /**
+## Objects #6
+1. create a car object
+2. Add make, model, year, colors (array),
+   hybrid(boolean) keys.
+3. Add two methods (drive and stop).
+4. In the function body setup log with random text.
+5. Log make.
+6. Log first color.
+7. Invoke/Call both Methods.
+*/
