@@ -1,3 +1,4 @@
+// We use Double and Triple Equality for comparison
 let a = 2;
 let b = '2';
 // Double Equality Force Type Coercion

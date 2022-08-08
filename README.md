@@ -31,3 +31,14 @@
    (your values goes here) plates available' - string
    concatenation.
 9. log message.
+
+## Conditional Statements #7
+
+1. Create two objects "person1", "person2".
+2. Setup name, age (15-25),
+   status ('resident', 'tourist') keys.
+
+3. Setup if else, condition where
+   age must be bigger than 18 and status must be
+   equal to 'resident'
+4. Test with both objects.
