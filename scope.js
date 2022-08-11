@@ -23,7 +23,7 @@ function fullNameRevised() {
   let lastName = 'Salmanizadehgan'; // Block level Scope
   let age = 26; // block level Score!
 
-  var dick = 2;
+  var digit = 2; // function scope variable
   /**
    // This variable will become Global Variable 
    because it has no keyword let or const or even var!
