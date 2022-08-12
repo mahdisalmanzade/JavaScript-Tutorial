@@ -25,8 +25,9 @@ function fullNameRevised() {
 
   var digit = 2; // function scope variable
   /**
-   // This variable will become Global Variable 
-   because it has no keyword let or const or even var!
+   // This variable will become Global Variable and is accessible
+   from outside of this function because it has no keyword let 
+   or const or even var!
    */
   globalVariable = 'global variable';
 
@@ -43,4 +44,13 @@ console.log(globalVariable);
 // Uncaught ReferenceError: age is not defined
 console.log(fullNameRevised());
 
-console.log(age);
+// console.log(age);
+
+// Simple Custom Code Block by using Curly Braces {}
+{
+  // Both of these variables are local and are scoped to {}
+  let blockLevelVariable = 'Block Level Variable';
+  const onyMoreblockLevelVariable = 'Block Level Variable';
+}
+
+console.log(blockLevelVariable); // Uncaught ReferenceError: blockLevelVariable is not defined
