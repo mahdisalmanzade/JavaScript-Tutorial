@@ -53,14 +53,12 @@ const people = [
     canHaveInsurance: true,
   },
 ];
-
-people.forEach((person, index, array) => {
-  if (person.position != 'JavaScript Developer') {
-    console.log(person.position.toUpperCase());
-  }
-});
-
-// Array Map method
+/**
+## Map Array Method
+## Always Does return a new array.
+## Does not change size of original array.
+## Making new array from items of original array.
+ */
 const iJustMappedMyArray = people.map((person, index, array) => {
   if (person.canHaveInsurance == false) {
     person.canHaveInsurance = true;
@@ -72,3 +70,9 @@ const iJustMappedMyArray = people.map((person, index, array) => {
 
 console.log(iJustMappedMyArray);
 console.log(people);
+
+// people.forEach((person, index, array) => {
+//   if (person.position != 'JavaScript Developer') {
+//     console.log(person.position.toUpperCase());
+//   }
+// });
