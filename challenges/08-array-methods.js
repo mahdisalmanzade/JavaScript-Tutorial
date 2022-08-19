@@ -69,7 +69,6 @@ const students = [
 // export default students;
 
 const survey = students.reduce((survey, student) => {
-  console.log(survey);
   /* console.log(student.favoriteSubject);
   const favSubject = student.favoriteSubject;
   survey[favSubject] = student.favoriteSubject; */
