@@ -47,6 +47,7 @@ console.log(listItems);
 listItems[2].style.color = 'blue';
 
 // querySelector('any css!!') - Select single element
+// querySelector always returns the first instance of particular/specified className or ID)
 // querySelectorAll('any css!!') - Select all elements
 // querySelectorAll always return NodeList
 const result = document.querySelector('#result');
@@ -60,6 +61,12 @@ item.forEach((listItem) => {
   console.log(listItem);
 });
 
-// Getting last item(li) in the ul
-// const lastItem = document.querySelector('li:last-child');
-// console.log(lastItem);
+// Getting last item(li) or the last child in the ul
+const lastItem = document.querySelector('li.special:last-child');
+console.log(lastItem);
+
+/**
+In Conclusion - We can replace all of the Javascript html Selectors
+with querySelector() for returning single elemetn and querySelectorAll()
+for returning list of elements
+*/
