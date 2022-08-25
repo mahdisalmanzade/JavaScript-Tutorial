@@ -33,7 +33,7 @@ console.log(headings[1].textContent);
 
 // getElementByTagName always returns HTMLCollection an array-like object
 const items = document.getElementsByTagName('li');
-const convertedToArray = [...items];
+const convertedToArray = [...items]; // convert HTMLCollection to array using spread operator
 console.log(convertedToArray);
 
 // convertedToArray.forEach((listItem) => {
