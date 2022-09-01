@@ -1,3 +1,50 @@
-p:hover {
-  /* font-size: 18px; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.4;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #113;
+}
+
+.btn-primary {
+  color: purple;
+  border-radius: 5px;
+  padding: 15px;
+  outline: 0;
+  border: none;
+  font-size: 15px;
+}
+
+.btn-primary:hover {
+  cursor: pointer;
+  background-color: palevioletred;
+  color: #fff;
+}
+.main-header {
+  color: hotpink;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #222;
+}
+
+.main-paragraph {
+  padding: 2px;
+  /* background-color: #ffffff; */
+  color: #fff;
+  text-decoration: underline;
+  border-radius: 10px;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+a {
+  color: #fff;
+  padding: 5px;
+  background: brown;
+  border-radius: 10px;
+  margin-bottom: 12px;
 }
