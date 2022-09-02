@@ -5,8 +5,9 @@ body {
   align-items: center;
   justify-content: center;
   line-height: 1.4;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto';
   background-color: #113;
+  text-align: center;
 }
 
 .btn-primary {
@@ -24,7 +25,7 @@ body {
   color: #fff;
 }
 .main-header {
-  color: hotpink;
+  color: hotpink !important;
   padding: 15px;
   border-radius: 5px;
   background-color: #222;
