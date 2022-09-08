@@ -15,7 +15,7 @@ secondBtn.addEventListener('click', function (event) {
   console.log(event.currentTarget);
 });
 
-// target property - identifies the element on which the event occured
+// target property -  identifies the element on which the event occured
 secondBtn.addEventListener('click', function (event) {
   event.target.style.color = 'blue';
   console.log(event.target);
