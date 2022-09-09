@@ -20,12 +20,13 @@ btn.addEventListener('click', function () {
 
 // Generating Random Hex Color
 function generateRandomHexColor() {
-  let temp = '#';
+  let hexColor = '#';
+  // i <= 5 or i < 6 both are correct
   for (let i = 0; i <= 5; i++) {
-    temp += hex[Math.floor(Math.random() * hex.length)];
+    hexColor += hex[Math.floor(Math.random() * hex.length)];
   }
 
-  return temp;
+  return hexColor;
 }
 
 console.log(generateRandomHexColor());
