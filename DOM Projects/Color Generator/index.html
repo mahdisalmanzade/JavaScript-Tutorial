@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Generator</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,100;1,400&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Roboto';
+        font-size: 20px;
+        height: 50vh;
+        color: crimson;
+      }
+
+      .btn {
+        /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); */
+        padding: 20px;
+        background-color: transparent;
+        font-style: italic;
+        border-radius: 10px;
+        font-size: 30px;
+        font-family: 'Roboto';
+        text-transform: uppercase;
+        outline: 0;
+        border: 3px solid #223;
+        /* font-weight: bolder; */
+      }
+      strong {
+        text-transform: uppercase;
+        font-size: 50px;
+      }
+
+      h1 {
+        font-size: 40px;
+        background: #111;
+        padding: 15px;
+        border-radius: 10px;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="heading">
+      Your Color is : <strong class="color-name"></strong>
+    </h1>
+    <button class="btn">Get Some Random Color</button>
+    <script src="color-generator.js"></script>
+  </body>
+</html>
