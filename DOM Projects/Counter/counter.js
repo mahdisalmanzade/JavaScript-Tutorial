@@ -6,6 +6,7 @@ let counter = document.getElementById('counter');
 And adding Listening for click event on every button.
 
 */
+// Love JavaScript
 allBtns.forEach((btn) => {
   btn.addEventListener('click', function () {
     if (btn.classList.contains('decrease')) {
