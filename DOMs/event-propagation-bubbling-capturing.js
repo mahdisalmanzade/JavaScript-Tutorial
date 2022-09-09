@@ -10,17 +10,28 @@ function showBubbling(event) {
   console.log('target', event.target);
 }
 
-list.addEventListener('click', showBubbling);
-container.addEventListener('click', showBubbling);
-// document.addEventListener('click', showBubbling);
-// window.addEventListener('click', showBubbling);
+function stopPropagation(e) {
+  console.log(e.target);
+  e.stopPropagation();
+}
+
+// list.addEventListener('click', stopPropagation);
+/* By adding { capture: true } object as a thrid argument of
+AddEventListener method we can have event capturing which is 
+the opposite way to event bubbling.
+## event capturing starts from root element and propagates to the
+innermost element or targeted */
+list.addEventListener('click', showBubbling, { capture: true });
+container.addEventListener('click', showBubbling, { capture: true });
+document.addEventListener('click', showBubbling, { capture: true });
+window.addEventListener('click', showBubbling, { capture: true });
 
 /**
 ## Instead of selecting anchor element and adding event listener to it,
 What we do is to selecting parent element and adding event listener
 to the parent element in this case ul element(unordered list).
 
-## Conclusion - We Just Accessed an inner element without directly
+## Conclusion - We Just Accessed an innermost element without directly
 selecting it(We just selected parent element! 😂 )
 
 */
