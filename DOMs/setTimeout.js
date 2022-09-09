@@ -1,5 +1,5 @@
 /**
-## setTimeout does run a function after a delay
+## setTimeout runs a function one after a specific time in milliseconds
 */
 
 let i = 0;
