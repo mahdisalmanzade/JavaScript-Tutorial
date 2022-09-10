@@ -29,6 +29,7 @@ allBtns.forEach((btn) => {
         counter.style.color = 'black';
       }
     }
+    console.log(counter.textContent);
     // Better way to handle colors
     //  if (counter.textContent < 0) {
     //    counter.style.color = 'red';
