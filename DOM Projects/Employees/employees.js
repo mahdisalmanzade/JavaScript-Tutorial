@@ -23,7 +23,7 @@ const employees = [
     id: 3,
     name: 'Mahdi Salmanizadehgan',
     job: 'Web Developer',
-    img: `https://randomuser.me/api/portraits/men/5.jpg`,
+    img: `https://avatars.githubusercontent.com/mahdisalmanzade`,
     text: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
     Ullam est dicta distinctio inventore.`,
   },
@@ -80,3 +80,16 @@ function showEmployees() {
   job.textContent = item.job;
   info.textContent = item.text;
 }
+
+async function getGitHubUsers() {
+  let response = await fetch('https://api.github.com/users');
+  let data = await response.json();
+  return data;
+}
+
+async function showUsers() {
+  let usersData = await getGitHubUsers();
+  console.log(usersData);
+}
+
+showUsers();
