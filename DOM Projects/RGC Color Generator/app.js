@@ -55,10 +55,9 @@ setOfPersons.add(o);
 setOfPersons.add(p);
 console.log(setOfPersons);
 
-// Symmetric Difference
 const set1 = new Set([1, 2, 3]);
 const set2 = new Set([1, 2, 3, 4]);
-
+// Symmetric Difference
 function symmetricDifference(setA, setB) {
   const _difference = new Set(setA);
   for (const elem of setB) {
@@ -72,3 +71,14 @@ function symmetricDifference(setA, setB) {
 }
 
 console.log([...symmetricDifference(set1, set2)]);
+
+async function fetchMovie() {
+  let response = await fetch(
+    'http://www.omdbapi.com/?apikey=8f7c9dc&i=tt2278871'
+  );
+
+  let data = await response.json();
+  console.log(data);
+}
+
+fetchMovie();
