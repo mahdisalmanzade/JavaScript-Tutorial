@@ -3,6 +3,7 @@
 const globalNumber = 5; // Global Variable
 
 function add(num1, num2) {
+  variableWithoutKeyword = 'global variable';
   const globalNumber = 20; // Local Variable
   const result = num1 + num2 + globalNumber;
   // Nested Functions do have access to the outer scope
@@ -15,5 +16,4 @@ function add(num1, num2) {
   multiply();
   return result;
 }
-
 console.log(add(3, 4));
