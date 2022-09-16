@@ -1,32 +1,32 @@
 // Selecting all buttons as NodeList(array-like object)
-const allBtns = document.querySelectorAll('.btn');
-let counter = document.getElementById('counter');
+const allBtns = document.querySelectorAll(".btn");
+console.log(allBtns);
+let counter = document.getElementById("counter");
 
 /* Iterating/Looping through NodeList(in other words all the buttons)
-And adding Listening for click event on every button.
-
+and listening for click event on every button.
 */
 // Love JavaScript
 allBtns.forEach((btn) => {
-  btn.addEventListener('click', function () {
-    if (btn.classList.contains('decrease')) {
+  btn.addEventListener("click", function () {
+    if (btn.classList.contains("decrease")) {
       counter.textContent--;
       counter.textContent < 0
-        ? (counter.style.color = 'red')
+        ? (counter.style.color = "red")
         : counter.textContent == 0
-        ? (counter.style.color = 'black')
+        ? (counter.style.color = "black")
         : null;
-    } else if (btn.classList.contains('increase')) {
+    } else if (btn.classList.contains("increase")) {
       counter.textContent++;
       counter.textContent > 0
-        ? (counter.style.color = 'green')
+        ? (counter.style.color = "green")
         : counter.textContent == 0
-        ? (counter.style.color = 'black')
+        ? (counter.style.color = "black")
         : null;
     } else {
       counter.textContent = 0;
       if (counter.textContent == 0) {
-        counter.style.color = 'black';
+        counter.style.color = "black";
       }
     }
     console.log(counter.textContent);

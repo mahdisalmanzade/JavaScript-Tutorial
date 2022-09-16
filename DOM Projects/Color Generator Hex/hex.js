@@ -1,8 +1,8 @@
-const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
-const btn = document.getElementById('btn');
-const color = document.querySelector('.color');
+const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+const btn = document.getElementById("btn");
+const color = document.querySelector(".color");
 
-btn.addEventListener('click', function () {
+btn.addEventListener("click", function () {
   let randomHex = generateRandomHexColor();
   console.log(`Generated Random Color is ${randomHex}`);
   document.body.style.backgroundColor = randomHex;
@@ -20,8 +20,8 @@ btn.addEventListener('click', function () {
 
 // Generating Random Hex Color
 function generateRandomHexColor() {
-  let hexColor = '#';
-  // i <= 5 or i < 6 both are correct
+  let hexColor = "#";
+  // 0 <= 5 or 0 < 6 both are correct
   for (let i = 0; i <= 5; i++) {
     hexColor += hex[Math.floor(Math.random() * hex.length)];
   }
