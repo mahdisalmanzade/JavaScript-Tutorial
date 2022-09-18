@@ -1,14 +1,14 @@
-const heading = document.querySelector('.heading');
-const btn = document.querySelector('.btn');
+const heading = document.querySelector(".heading");
+const btn = document.querySelector(".btn");
 
-btn.addEventListener('click', function (e) {
-  let rgbColorFormat = '';
+btn.addEventListener("click", function (e) {
+  let rgbColorFormat = "";
   for (let i = 0; i < 3; i++) {
     if (i == 2) {
       rgbColorFormat += RGBColorGenerator();
       break;
     }
-    rgbColorFormat += RGBColorGenerator() + ',';
+    rgbColorFormat += RGBColorGenerator() + ",";
   }
 
   rgbColorFormat = `rgb(${rgbColorFormat})`;
@@ -24,14 +24,3 @@ const RGBColorGenerator = () => {
 
   return randomNumberBetween0to255;
 };
-
-// async function fetchMovie() {
-//   let response = await fetch(
-//     'http://www.omdbapi.com/?apikey=8f7c9dc&i=tt2278871'
-//   );
-
-//   let data = await response.json();
-//   console.log(data);
-// }
-
-// fetchMovie();

@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: hotpink;
+}
+/* General Styling */
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.4;
+  font-size: 16px;
+  background-color: #f1f5f9;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+ul li {
+  list-style-type: none;
+}
+
+/* Specific Styles */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  background: #111;
+}
+
+.header-title {
+  font-family: "Great Vibes";
+}
+
+/* FORM Styles */
+.movie-form > * {
+  color: var(--primary-color);
+}
+
+#movie-input {
+  background: #f1f5f9;
+  color: #111;
+  padding: 3px;
+  margin-left: 15px;
+  font-weight: bolder;
+  padding: 6px;
+  border: none;
+  border-radius: 5px;
+}
+
+#movie-input::placeholder {
+  font-size: 16px;
+  font-family: "Open Sans";
+}
+
+.search-btn {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-weight: bolder;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.main-nav .lists {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 20px;
+}
+
+.main-nav .lists .list-item {
+  margin-left: 2rem;
+}
+
+.main-nav .lists .list-item:hover {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.movies-center.container {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.movies-title {
+  text-align: center;
+}
+
+.movie-title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.movie-card {
+  padding: 10px;
+  background: #111;
+  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+  color: #fff;
+  align-items: center;
+  border-radius: 5px;
+  width: 210px;
+  height: 310px;
+  margin: 5px;
+}
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#movie-image {
+  width: 210px;
+  height: 310px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.movie-ratings {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+
+  place-items: center;
+  row-gap: 5px;
+  color: goldenrod;
+  font-style: italic;
+  font-weight: 700;
+  /* font-size: 16px; */
+}
+.movie-ratings.internet-movie-database {
+  margin-top: 10px;
+}

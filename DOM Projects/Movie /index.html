@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- extra fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-container">
+        <h1 class="header-title">
+          <a href="#">
+            <i class="fa fa-film"></i>
+            Movie Squad</a
+          >
+        </h1>
+
+        <form action="" class="movie-form">
+          <label for="" class="search-label">Search Movie</label>
+          <input
+            type="text"
+            name="movie-name"
+            id="movie-input"
+            placeholder="Search movie..."
+          />
+          <input type="submit" value="Search" class="search-btn" />
+        </form>
+
+        <nav class="main-nav">
+          <ul class="lists">
+            <li class="list-item">
+              <a href="#" class="link">Latest Movies</a>
+            </li>
+            <li class="list-item"><a href="#" class="link">Movies Quote</a></li>
+            <li class="list-item"><a href="#">About Me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Movies Section Start -->
+      <section class="movies">
+        <div class="movies-title">
+          <h2>Latest Movies</h2>
+        </div>
+        <div class="movies-center container">
+          <article class="movie-card">
+            <!-- Movie Title -->
+            <h2 class="movie-title"></h2>
+            <!-- Image Container -->
+            <div class="img-container">
+              <img src="" alt="" id="movie-image" />
+            </div>
+            <div class="movie-info">
+              <span class="movie-year"></span>
+              <span class="movie-name"></span>
+            </div>
+            <!-- Movie Ratings -->
+            <!-- <div class="movie-ratings">
+              <span class="internet-movie-database rate"></span>
+              <span class="rotter-tomatoes rate"></span>
+              <span class="metacritic rate"></span>
+            </div> -->
+          </article>
+        </div>
+      </section>
+      <!-- Movies Section End -->
+    </main>
+
+    <!-- <footer class="main-footer">
+      <span
+        ><a href="#">Create by <i class="fa fa-heart"></i></a
+      ></span>
+    </footer> -->
+
+    <script src="app.js"></script>
+  </body>
+</html>
