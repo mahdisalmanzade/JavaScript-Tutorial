@@ -7,7 +7,7 @@
 // Reference array item in the CALLBACK Parameter.
 
 // Array containing falsy values
-const numbers = [null, {}, [], undefined, '', 'some text'];
+const numbers = [null, {}, [], 0, -0, undefined, "", "some text"];
 
 // Old-fashion way of iterating through arrays!
 for (let i = 0; i < numbers.length; i++) {
@@ -32,24 +32,24 @@ const mappedArray = numbers.map((item, index, array) => {
 
 console.log(mappedArray);
 
-// Iterating through list of people
-const people = [
+// Iterating through list of objects in this case list of developers
+const developers = [
   {
-    name: 'Mahdi',
+    name: "Mahdi",
     age: 26,
-    position: 'JavaScript Developer',
+    position: "JavaScript Developer",
     canHaveInsurance: false,
   },
   {
-    name: 'Sarah',
+    name: "Sarah",
     age: 24,
-    position: 'UI/UX Designer',
+    position: "UI/UX Designer",
     canHaveInsurance: false,
   },
   {
-    name: 'Pourya',
+    name: "Pourya",
     age: 28,
-    position: 'Java Developer',
+    position: "Java Developer",
     canHaveInsurance: true,
   },
 ];
@@ -59,20 +59,36 @@ const people = [
 ## Does not change size of original array.
 ## Making new array from items of original array.
  */
-const iJustMappedMyArray = people.map((person, index, array) => {
-  if (person.canHaveInsurance == false) {
-    person.canHaveInsurance = true;
-    return person;
-  } else if (person.canHaveInsurance == true) {
-    return person;
+const iJustMappedMyArray = developers.map((developer, index, array) => {
+  // Using Old-fashioned if else statement
+  if (developer.canHaveInsurance == false) {
+    developer.canHaveInsurance = true;
+    return developer;
+  } else if (developer.canHaveInsurance == true) {
+    return (developer.canHaveInsurance = {
+      ...developer,
+      canHaveInsurance: false,
+    });
   }
+
+  // Using Ternary Operator
+  // return !developer.canHaveInsurance
+  //   ? { ...developer, canHaveInsurance: true }
+  //   : developer.canHaveInsurance
+  //   ? { ...developer, canHaveInsurance: false }
+  //   : true;
 });
 
 console.log(iJustMappedMyArray);
-console.log(people);
+// console.log(developers);
 
-// people.forEach((person, index, array) => {
-//   if (person.position != 'JavaScript Developer') {
-//     console.log(person.position.toUpperCase());
-//   }
-// });
+developers.forEach((developer, index, array) => {
+  // First Solution
+  // if (developer.position != "JavaScript Developer") {
+  //   console.log(developer.position.toUpperCase());
+  // }
+  // Better Approach
+  if (!developer.position.includes("JavaScript")) {
+    console.log(developer.position.toUpperCase());
+  }
+});

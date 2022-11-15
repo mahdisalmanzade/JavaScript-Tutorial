@@ -4,28 +4,29 @@
 // Returns based on conditon provided in CALLBACK
 const people = [
   {
-    name: 'Mahdi',
+    name: "Mahdi",
     age: 26,
-    position: 'JavaScript Developer',
+    position: "JavaScript Developer",
     canHaveInsurance: false,
   },
   {
-    name: 'Sarah',
+    name: "Sarah",
     age: 24,
-    position: 'UI/UX Designer',
+    position: "UI/UX Designer",
     canHaveInsurance: false,
   },
   {
-    name: 'Pourya',
+    name: "Pourya",
     age: 28,
-    position: 'Java Developer',
+    position: "Java Developer",
     canHaveInsurance: true,
   },
 ];
 
 const result = people.filter((person, index, array) => {
   //   return person.age >= 26;
-  return person.name.includes('h');
+  // return person.name.includes('h');
+  return person.position.includes("JavaScript");
 });
 
 console.log(result);

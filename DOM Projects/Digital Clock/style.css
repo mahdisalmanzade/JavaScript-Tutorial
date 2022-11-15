@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #f1f5f8;
+  font-family: "Open Sans";
+  line-height: 1.5;
+  background-image: url(./2221977.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content-header {
+  background: #111;
+  color: #ffff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* Giving 100vh height for align-items to make sense */
+  height: 100vh;
+}
+
+#date-time {
+  /* background: #111; */
+  color: #222;
+  padding: 5px;
+  margin-top: 15px;
+  padding: 5px 15px;
+  font-size: 30px;
+  /* border: 1px solid #222; */
+  font-weight: bolder;
+  border-radius: 10px;
+}

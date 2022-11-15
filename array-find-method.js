@@ -1,6 +1,6 @@
 // Find
 /**
-## Return single instance(in this case object)
+## Return single value(in this case object)
 ## Returns first match if no match undefined
 ## Great for getting unique value 
 ## Always return the first occurence
@@ -8,26 +8,25 @@
 */
 
 const people = [
-  2,
   {
     id: 1,
-    name: 'Mahdi',
+    name: "Mahdi",
     age: 26,
-    position: 'JavaScript Developer',
+    position: "JavaScript Developer",
     canHaveInsurance: false,
   },
   {
     id: 2,
-    name: 'Sarah',
+    name: "Sarah",
     age: 24,
-    position: 'UI/UX Designer',
+    position: "UI/UX Designer",
     canHaveInsurance: false,
   },
   {
     id: 3,
-    name: 'Pourya',
+    name: "Pourya",
     age: 28,
-    position: 'Java Developer',
+    position: "Java Developer",
     canHaveInsurance: true,
   },
 ];
@@ -42,5 +41,3 @@ const filterResult = people.filter((person, index, array) => {
 });
 console.log(findResult);
 console.log(filterResult);
-
-const colours = ['Red', 'Blue', 'Green'];

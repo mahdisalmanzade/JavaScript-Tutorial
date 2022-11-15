@@ -6,43 +6,43 @@
 const people = [
   {
     id: 1,
-    name: 'Mahdi',
+    name: "Mahdi",
     age: 26,
-    position: 'JavaScript Developer',
+    position: "JavaScript Developer",
     canHaveInsurance: false,
     salary: 200,
   },
   {
     id: 2,
-    name: 'Sarah',
+    name: "Sarah",
     age: 24,
-    position: 'UI/UX Designer',
+    position: "UI/UX Designer",
     canHaveInsurance: false,
     salary: 300,
   },
   {
     id: 3,
-    name: 'Pourya',
+    name: "Pourya",
     age: 28,
-    position: 'Java Developer',
+    position: "Java Developer",
     canHaveInsurance: true,
     salary: 500,
   },
   {
     id: 4,
-    name: 'Somayeh',
+    name: "Somayeh",
     age: 29,
-    position: 'CEO',
+    position: "CEO",
     canHaveInsurance: true,
     salary: 500,
   },
 ];
 
-const totalSalary = people.reduce(function (acc, currItem) {
-  console.log(`previous value ${acc}`);
-  console.log(`current value ${currItem.salary}`);
-  acc += currItem.salary;
-  return acc;
+const totalSalary = people.reduce(function (previousValue, currentValue) {
+  console.log(`previous value ${previousValue}`);
+  console.log(`current value ${currentValue.salary}`);
+  previousValue += currentValue.salary;
+  return previousValue;
 }, 0);
 
 console.log(totalSalary);

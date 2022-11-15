@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap");
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   line-height: 1.4;
-  font-family: 'Roboto';
-  background-color: #113;
+  font-family: "Roboto";
   text-align: center;
 }
 
@@ -25,10 +24,10 @@ body {
   color: #fff;
 }
 .main-header {
-  color: hotpink !important;
+  /* color: hotpink !important; */
   padding: 15px;
   border-radius: 5px;
-  background-color: #222;
+  /* background-color: #222; */
 }
 
 .main-paragraph {
